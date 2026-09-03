@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap');
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 6vw;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  transition: color 0.4s ease;
+}
+
+/* Background NOISE Text */
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Anton', sans-serif;
+  font-size: 25vw;
+  font-weight: 400;
+  letter-spacing: 2px;
+  user-select: none;
+  z-index: 1;
+  pointer-events: none;
+  white-space: nowrap;
+  line-height: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.7; 
+  transition: opacity 0.3s ease, color 0.4s ease;
+}
+
+/* Center Airbuds Container */
+.hero-image-container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 520px;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-airbuds-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.45)) 
+          drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
+  pointer-events: none;
+}
+
+/* Side Spec Text Styling */
+.spec-box {
+  position: absolute;
+  z-index: 10;
+  max-width: 200px;
+}
+
+.spec-title {
+  font-size: clamp(11px, 1.5vw, 16px);
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: inherit;
+  line-height: 1.2;
+}
+
+.spec-desc {
+  font-size: clamp(10px, 1.2vw, 13px);
+  line-height: 1.45;
+  color: inherit;
+  opacity: 0.88;
+  font-weight: 600;
+}
+
+.spec-sub {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: clamp(9px, 1vw, 12px);
+  opacity: 0.75;
+}
+
+/* Coordinate Offsets (Preserved identically for all screens) */
+.spec-left-top {
+  left: 6vw;
+  top: 28%;
+  text-align: left;
+}
+
+.spec-left-bottom {
+  left: 6vw;
+  bottom: 24%;
+  text-align: left;
+}
+
+.spec-right-top {
+  right: 6vw;
+  top: 28%;
+  text-align: left;
+}
+
+.spec-right-bottom {
+  right: 6vw;
+  bottom: 24%;
+  text-align: left;
+}
+
+/* Bottom Controls */
+.color-selector {
+  position: absolute;
+  bottom: 35px;
+  left: 6vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.color-selector span {
+  font-size: clamp(9px, 1vw, 11px);
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.color-dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-dot {
+  width: clamp(14px, 1.8vw, 20px);
+  height: clamp(14px, 1.8vw, 20px);
+  border-radius: 50%;
+  border: 1px solid rgba(150, 150, 150, 0.4);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.color-dot.active {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 2px currentColor;
+}
+
+/* Bottom Center Buy Button */
+.hero-cta-center {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.btn-buy {
+  padding: clamp(8px, 1.2vh, 12px) clamp(20px, 3vw, 38px);
+  border-radius: 30px;
+  font-weight: 900;
+  font-size: clamp(9px, 1vw, 11px);
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transition: background 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Bottom Right Play Video Button */
+.btn-play-video {
+  position: absolute;
+  bottom: 35px;
+  right: 6vw;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: clamp(9px, 1vw, 11px);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.btn-play-video:hover {
+  opacity: 1;
+}
+
+.play-arrow {
+  font-size: 9px;
+}
+
+/* Mobile Image scaling override so it doesn't overlap text on small viewports */
+@media screen and (max-width: 768px) {
+  .hero-image-container {
+    max-width: 240px;
+    height: 220px;
+  }
+}

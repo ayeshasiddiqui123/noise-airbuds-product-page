@@ -1,0 +1,16 @@
+:root {
+  /* Dynamic Theme Colors (Updated via State) */
+  --bg-gradient: radial-gradient(circle at center, #599882 0%, #2e594a 100%);
+  --accent-color: #ffffff;
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --card-bg: #ffffff;
+  --card-text: #1d2120;
+  
+  /* Fonts & Shadows */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --transition-smooth: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}

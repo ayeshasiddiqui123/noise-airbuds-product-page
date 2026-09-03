@@ -1,0 +1,130 @@
+.footer {
+  background: #0d1110;
+  color: #ffffff;
+  padding: 60px 60px 30px 60px;
+  font-family: inherit;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+}
+
+.footer-brand {
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 70px;
+}
+
+/* CRITICAL FIX: Stacks links vertically */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 8px 0;
+  color: #3e7d69;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: #889990;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+/* Social Icon Buttons */
+.social-icon-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.social-icon-row a {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b0c2bb;
+  transition: all 0.2s ease;
+}
+
+.social-icon-row a:hover {
+  background: #3e7d69;
+  color: #ffffff;
+  border-color: #3e7d69;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  color: #61706b;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media screen and (max-width: 968px) {
+  .footer {
+    padding: 40px 24px 20px 24px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .footer-links {
+    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-brand {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    font-size: 36px;
+  }
+}
