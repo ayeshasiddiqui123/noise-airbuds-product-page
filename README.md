@@ -1,10 +1,10 @@
- 🎧 Noise Airbuds — Product Landing Page
+## 🎧 Noise Airbuds — Product Landing Page
 
 A modern and responsive wireless earbuds landing page built with **React, Vite, Framer Motion, and CSS**.
 
 This is a **learning and portfolio project** created to practice React, responsive design, animations, and frontend development.
 
- ✨ Features
+## ✨ Features
 
 * Responsive design
 * Interactive product colors
@@ -13,7 +13,7 @@ This is a **learning and portfolio project** created to practice React, responsi
 * Modern product-focused UI
 * Mobile-friendly navigation
 
- 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 * React
 * Vite
@@ -22,7 +22,7 @@ This is a **learning and portfolio project** created to practice React, responsi
 * Framer Motion
 * Lucide React
 
- 📚 Learning Goals
+## 📚 Learning Goals
 
 This project helped me practice:
 
@@ -31,5 +31,3 @@ This project helped me practice:
 * UI animations
 * Frontend project structure
 * Deploying a React website
-
-Learning / Portfolio Project
